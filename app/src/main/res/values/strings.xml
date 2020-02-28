@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo Live Data</string>
+
+    <string name="home_fragment_et_hint">Enter your input</string>
+    <string name="proceed">Proceed</string>
+    <string name="live_text">This is a live text</string>
+    <string name="dest_dummy_text">Text passed from Home</string>
+</resources>

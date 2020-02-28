@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.varma.hemanshu.demolivedata.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_destination_fragment"
+            app:destination="@id/destination_fragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/destination_fragment"
+        android:name="com.varma.hemanshu.demolivedata.DestinationFragment"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_destination">
+
+        <argument
+            android:name="text_from_et"
+            app:argType="string" />
+    </fragment>
+</navigation>
